@@ -76,12 +76,8 @@ async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, Cancel
     {
         Message messageMusic = await botClient.SendAudioAsync(
         chatId: chatId,
-        audio: "https://github.com/Ocminogg/zadanie9nout/blob/master/music/Daft%20Punk%20-%20Get%20Lucky%20(feat.%20Pharrell%20Williams).mp3",
-        /*
-        performer: "Joel Thomas Hunger",
-        title: "Fun Guitar and Ukulele",
-        duration: 91, // in seconds
-        */
+        audio: "https://github.com/TelegramBots/book/raw/master/src/docs/audio-guitar.mp3",
+        
         cancellationToken: cancellationToken);
     }
     
